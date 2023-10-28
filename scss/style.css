@@ -156,6 +156,11 @@ nav.active {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 900px) {
+  #mainvisual .main-image {
+    width: 100%;
+  }
+}
 
 /*main-title*/
 .maintitle {

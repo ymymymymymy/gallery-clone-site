@@ -165,6 +165,9 @@ nav {
         height: 100vh;
         flex-shrink: 0;
         object-fit: cover;
+        @include mobile {
+            width: 100%;
+        }
     }
 }
 
