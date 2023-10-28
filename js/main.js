@@ -43,17 +43,31 @@ for (let i = 0; i < fadeIn.length; i++) {
 }
 
 // ヘッダーの表示・非表示
-const header = document.getElementsByClassName('js-header');
+const headers = document.getElementsByClassName('js-header');
 
-for (let i = 0; i < header.length; i++) {
-    window.addEventListener("scroll", scroll_event);
-    function scroll_event() {
+
+// for (let i = 0; i < header.length; i++) {
+//     window.addEventListener("scroll", scroll_event);
+//     function scroll_event() {
+//         if (window.scrollY > 600) {
+//             header[i].style.opacity = 1;
+//         } else if (window.scrollY < 600) {
+//             header[i].style.opacity = 0;
+//         }
+//     }
+// }
+for (let i = 0; i < headers.length; i++) {
+    window.addEventListener("scroll", createScrollEvent(i));
+}
+
+function createScrollEvent(i) {
+    return function () {
         if (window.scrollY > 600) {
-            header[i].style.opacity = 1;
-        } else if (window.scrollY < 600) {
-            header[i].style.opacity = 0;
+            headers[i].style.opacity = 1;
+        } else {
+            headers[i].style.opacity = 0;
         }
-    }
+    };
 }
 
 
