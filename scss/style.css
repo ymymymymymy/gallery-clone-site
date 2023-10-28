@@ -69,17 +69,18 @@ header {
   width: 100%;
   height: 100px;
   z-index: 1000;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 1s;
 }
 header .header-title {
   position: fixed;
   top: 35px;
   left: 30px;
   z-index: 1000;
-  transition: 1s;
-  opacity: 0;
 }
-
-nav {
+header nav {
   position: fixed;
   width: 100%;
   text-align: center;
@@ -90,28 +91,25 @@ nav {
   z-index: 999;
   transition: ease-in-out 0.6s;
 }
-nav ul {
+header nav ul {
   padding: 80px 0 30px;
 }
-nav ul li {
+header nav ul li {
   padding: 10px 0;
 }
-nav.active {
+header nav.active {
   top: 0;
 }
-
-.hamburger {
+header .hamburger {
   position: fixed;
   top: 35px;
   right: 30px;
   width: 40px;
   height: 40px;
   cursor: pointer;
-  opacity: 0;
-  transition: 1s;
   z-index: 1000;
 }
-.hamburger span {
+header .hamburger span {
   display: block;
   position: relative;
   width: 30px;
@@ -119,23 +117,23 @@ nav.active {
   background-color: #fff;
   transition: 0.5s;
 }
-.hamburger span:nth-child(1) {
+header .hamburger span:nth-child(1) {
   top: 0px;
 }
-.hamburger span:nth-child(2) {
+header .hamburger span:nth-child(2) {
   margin: 10px 0;
 }
-.hamburger span:nth-child(3) {
+header .hamburger span:nth-child(3) {
   top: 0px;
 }
-.hamburger.active span:nth-child(1) {
+header .hamburger.active span:nth-child(1) {
   top: 10px;
   transform: rotate(45deg);
 }
-.hamburger.active span:nth-child(2) {
+header .hamburger.active span:nth-child(2) {
   opacity: 0;
 }
-.hamburger.active span:nth-child(3) {
+header .hamburger.active span:nth-child(3) {
   top: -10px;
   transform: rotate(-45deg);
 }
@@ -228,6 +226,7 @@ nav.active {
 
 /*access-img*/
 .access-img {
+  display: flex;
   position: fixed;
   width: 100vw;
   min-width: 100%;
