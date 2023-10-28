@@ -67,12 +67,8 @@ section {
 
 header {
     display: block;
-    position: fixed;
     width: 100%;
     height: 100px;
-    z-index: 1000;
-    top: 0;
-    left: 0;
     opacity: 0;
     transition: 1.0s;
 
