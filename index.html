@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FA EXHIBITON clone-site</title>
+    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-title js-header">
+            <a href="#"><img src="img/logo.svg" alt="FA EXHIBITION"></a>
+        </div>
+        <nav id="js-nav">
+            <ul class="menu">
+                <li><a href="#">TOP</a></li>
+                <li><a href="#infomation">INFORMATION</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#access">ACCESS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger js-header" id="js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <div id="mainvisual">
+                <img class="main-image" src="https://code-jump.com/demo/html/gallery/img/mainvisual1.jpg" alt="mainvisual1">
+                <img class="main-image" src="https://code-jump.com/demo/html/gallery/img/mainvisual2.jpg" alt="mainvisual2">
+                <img class="main-image" src="https://code-jump.com/demo/html/gallery/img/mainvisual3.jpg" alt="mainvisual3">
+            </div>
+            <h1 class="maintitle fade-in">
+                Hello Flower!
+                <br>FA EXHIBITION 2021
+            </h1>
+            <section id="information" class="fade-in">
+                <h2 class="section-title">INFORMATION</h2>
+                <span>2021 JUL 1(THU)-3(SAT)</span>
+                <p>DAY1 10am-6pm OTHER 10am-5:30pm</p>
+                <h3>at PARK SIDE HALL</h3>
+                <p>
+                    2021年7月1日(木)ー3日(土)
+                    <br>Day1 10時〜18時  その他 10時〜17時30分
+                </p>
+            </section>
+            <section id="gallery" class="fade-in">
+                <h2 class="section-title">GALLERY</h2>
+                <ul>
+                    <li class="fade-in"><img src="https://code-jump.com/demo/html/gallery/img/flower1.jpg" alt="flower1"></li>
+                    <li class="fade-in"><img src="https://code-jump.com/demo/html/gallery/img/flower2.jpg" alt="flower2"></li>
+                    <li class="fade-in"><img src="https://code-jump.com/demo/html/gallery/img/flower3.jpg" alt="flower3"></li>
+                    <li class="fade-in"><img src="https://code-jump.com/demo/html/gallery/img/flower4.jpg" alt="flower4"></li>
+                    <li class="fade-in"><img src="https://code-jump.com/demo/html/gallery/img/flower5.jpg" alt="flower5"></li>
+                    <li class="fade-in"><img src="https://code-jump.com/demo/html/gallery/img/flower6.jpg" alt="flower6"></li>
+                </ul>
+            </section>
+            <div class="access-img" id="js-bg-access"></div>
+            <section id="access">
+                <h2 class="section-title">ACCESS</h2>
+                <h3>PARK SIDE HALL</h3>
+                <p>
+                    〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL
+                    <br>PARK SIDE HALL, 1-1-1 Jiyugaoka, Meguro-ku, Tokyo
+                </p>
+                <p>
+                    Tel: 03-1111-1111
+                    <br>E-mail: info@xxxxxxx.jp
+                </p>
+                <a href="#">GOOGL MAP</a>
+            </section>
+            <section id="contact">
+                <h2 class="section-title">CONTACT</h2>
+                <a href="#" class="contact-btn">
+                    出展に関するお問い合わせ
+                </a>
+                <a href="#" class="contact-btn">
+                    その他のお問い合わせ
+                </a>
+            </section>
+            <div class="side-btn">
+                <a href="#">FOR VISITOR</a>
+                <a href="#">FOR EXHIBITOR</a>
+            </div>
+
+        </main>
+        <footer>
+            <div class="footer-item">
+                <div class="footer-access">
+                    <p>FA EXHIBITION</p>
+                    <p>〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL</p>
+                    <p>Tel: 03-1111-1111</p>
+                    <p>E-mail: info@xxxxxxx.jp</p>
+                    <div class="footer-sns">
+                        <a href="#">Twitter</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <a href="#">PRIVACYPOLICY</a>
+                    <p>©FA EXHIBITION</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
