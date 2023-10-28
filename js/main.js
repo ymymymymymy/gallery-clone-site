@@ -45,16 +45,6 @@ for (let i = 0; i < fadeIn.length; i++) {
 // ヘッダーの表示・非表示
 const headers = document.getElementsByClassName('js-header');
 
-// for (let i = 0; i < header.length; i++) {
-//     window.addEventListener("scroll", scroll_event);
-//     function scroll_event() {
-//         if (window.scrollY > 600) {
-//             header[i].style.opacity = 1;
-//         } else if (window.scrollY < 600) {
-//             header[i].style.opacity = 0;
-//         }
-//     }
-// }
 for (let i = 0; i < headers.length; i++) {
     window.addEventListener("scroll", createScrollEvent(i));
 }
@@ -82,14 +72,15 @@ ham.addEventListener("click", function () {
 // サイドボタン
 const sidebtn = document.querySelectorAll('.side-btn');
 
-
 for (let i = 0; i < sidebtn.length; i++) {
     window.addEventListener("scroll", scroll_event(i));
 }
 function scroll_event(i) {
-    if (window.scrollY > 900 && window.scrollY < access.offsetTop - 800) {
-        sidebtn[i].style.right = -155 + 'px';
-    } else {
-        sidebtn[i].style.right = -205 + 'px';
+    return function () {
+        if (window.scrollY > 900 && window.scrollY < access.offsetTop - 800) {
+            sidebtn[i].style.right = -155 + 'px';
+        } else {
+            sidebtn[i].style.right = -205 + 'px';
+        }
     }
 }
