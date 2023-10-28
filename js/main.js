@@ -18,7 +18,7 @@ window.addEventListener("scroll", function () {
 const access = document.getElementById('access');
 const bgAccess = document.getElementById('js-bg-access');
 window.addEventListener('scroll', function(){
-    if (window.scrollY > access.offsetTop - 700 && window.scrollY < access.offsetTop + 100) {
+    if (window.scrollY > access.offsetTop - 500 && window.scrollY < access.offsetTop) {
         bgAccess.style.opacity = 1;
     } else {
         bgAccess.style.opacity = 0;
